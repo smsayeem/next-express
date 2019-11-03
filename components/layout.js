@@ -3,7 +3,7 @@ import "../styles/Style.css";
 import Head from "next/head";
 import PropTypes from "prop-types";
 
-const Layout = props => {
+const Layout = ({ children }) => {
   return (
     <div>
       <Head>
@@ -14,7 +14,7 @@ const Layout = props => {
         />
       </Head>
       <Nav />
-      {props.children}
+      {children}
     </div>
   );
 };

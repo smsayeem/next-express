@@ -44,10 +44,7 @@ Posts.propTypes = {
       id: PropTypes.number,
       title: PropTypes.string
     })
-  )
+  ).isRequired
 };
-Posts.defaultProps = {
-  id: null,
-  title: ""
-};
+
 export default Posts;
